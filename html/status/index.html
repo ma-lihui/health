@@ -1,0 +1,28 @@
+<div ng-include="'html/common/header.html'"></div>
+<div class="mid_content">
+    <div class="m_circle">
+        <div data-radial-indicator="indicatorOption"  data-radial-indicator-model="indicatorValue"  data-radial-indicator-id="indicator1" class="indicator"></div>
+        <div class="open_map">
+            <a href="#/map"><button type="button" class="am-btn am-btn-primary am-round">运动轨迹</button></a>
+        </div>
+
+    </div>
+    <div data-am-widget="list_news" class="am-list-news am-list-news-default ul_content">
+        <div class="am-list-news-bd">
+            <ul class="am-list">
+                <!--缩略图在标题左边-->
+                <li ng-repeat="i in list_content"
+                    class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left list_li">
+                    <div class="am-u-sm-1 am-list-thumb"></div>
+
+                    <a class=" am-u-sm-11 am-list-main" ng-click="route(i.href)">
+                        <h3 class="am-list-item-hd">{{i.title}}</h3>
+                        <div class="am-list-item-text">{{i.description}}</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div ng-include="'html/common/footer.html'"></div>

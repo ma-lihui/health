@@ -1,0 +1,45 @@
+<header data-am-widget="header"
+        class="am-header am-header-default am-header-fixed" id="header">
+    <h1 class="am-header-title">
+        <a href="javascript:void 0" class="">
+            {{btn_text}}
+        </a>
+    </h1>
+</header>
+<form class="am-form am-form-horizontal login">
+    <div class="login_top"></div>
+    <div class="am-form-group tip">
+        <div class="am-u-sm-9 am-u-sm-offset-3">
+            <p class="err_tip"> {{username_tip}}</p>
+        </div>
+    </div>
+    <div class="am-form-group">
+        <label for="doc-ipt-3" class="am-u-sm-3 am-form-label">用户名</label>
+        <div class="am-u-sm-7">
+            <input type="text" id="doc-ipt-3" placeholder="{{place_user}}" ng-model="username">
+        </div>
+        <div class="am-u-sm-3"></div>
+    </div>
+    <div class="am-form-group tip">
+        <div class="am-u-sm-7 am-u-sm-offset-3">
+            <p class="am-u-sm-offset-3 err_tip"> {{password_tip}}</p>
+        </div>
+    </div>
+    <div class="am-form-group">
+        <label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label">密码</label>
+        <div class="am-u-sm-7">
+            <input type="password" id="doc-ipt-pwd-2" placeholder="{{place_password}}" ng-model="password">
+        </div>
+        <div class="am-u-sm-2"></div>
+    </div>
+    <div class="am-form-group">
+        <div class="am-u-sm-7 am-u-sm-offset-3">
+            <button type="submit" class="am-btn am-btn-primary am-u-sm-7 am-btn-block  btn-loading-example" ng-click="submit()">{{btn_text}}</button>
+        </div>
+    </div>
+    <div class="am-form-group info">
+        <div class="am-u-sm-7 am-u-sm-offset-5">
+            <a href="" ng-click="reg_login()">{{info}}</a>
+        </div>
+    </div>
+</form>

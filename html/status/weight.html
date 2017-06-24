@@ -1,0 +1,23 @@
+<div ng-include="'html/common/header.html'"></div>
+<div style="height: 80px"></div>
+<div class="am-g">
+    <div class="am-u-sm-12">
+        <div class="am-thumbnail">
+            <img src="image/weight.jpg" alt=""/>
+            <div class="am-thumbnail-caption am-form">
+                <h3>今天你的体重</h3>
+                <div>
+                    <div class="am-input-group am-input-group-primary">
+                        <input type="text" class="am-form-field" ng-model="weight">
+                        <span class="am-input-group-btn">
+                            <button class="am-btn am-btn-primary" type="button" ng-click="save_weight()">确定</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<line id="main" legend="legend" item="item" data="data"></line>
+<div style="height: 80px"></div>
+<div ng-include="'html/common/footer.html'"></div>

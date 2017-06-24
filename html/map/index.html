@@ -1,0 +1,31 @@
+<div ng-include="'html/common/header.html'"></div>
+<div>
+    <app-map style="height: 500px;" address="{{address}}"> </app-map>
+</div>
+<div class="begin_sport">
+    <div class="begin_sport_center">
+        <p class="sport_time">运动时间</p>
+        <p class="count_time">{{count_time.str_time}}</p>
+        <hr data-am-widget="divider" style="" class="am-divider am-divider-default line" />
+        <div class="sport_params_main">
+            <div class="sport_params">
+                <p>距离</p>
+                <p>{{sport.distance|number:'2'}}米</p>
+            </div>
+            <div class="sport_params">
+                <p>速度</p>
+                <p>{{sport.speed|number:'2'}}米/秒</p>
+            </div>
+            <div class="sport_params">
+                <p>热量</p>
+                <p>{{sport.calories|number:'2'}}千卡</p>
+            </div>
+        </div>
+        <div class="button_arr">
+            <button  class="button" ng-click="start_count_time()" ng-disabled="time_status">开始</button>
+            <button  class="button red" ng-click="end_count_time()">结束</button>
+        </div>
+    </div>
+</div>
+
+<div ng-include="'html/common/footer.html'"></div>

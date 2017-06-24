@@ -1,0 +1,21 @@
+<header data-am-widget="header"
+        class="am-header am-header-default am-header-fixed" id="header">
+    <div class="am-header-left am-header-nav" ng-show="back" ng-click="goback()">
+        <a href="javascript:void 0" class="">
+            <i class="am-header-icon am-icon-arrow-left"></i>
+        </a>
+    </div>
+
+    <h1 class="am-header-title">
+        <a href="javascript:void 0" class="">
+            {{title}}
+        </a>
+    </h1>
+
+    <div class="am-header-right am-header-nav" ng-show="edit" ng-click="edit()">
+        <a href="javascript:void 0" class="">
+            编辑 <i class="am-header-icon am-icon-edit"></i>
+        </a>
+    </div>
+</header>
+<div id="header_bottom"></div>

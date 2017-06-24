@@ -1,0 +1,17 @@
+<div ng-include="'html/common/header.html'"></div>
+<div style="height: 80px"></div>
+<div class="am-g">
+    <div class="am-u-md-8 am-u-sm-centered">
+        <form class="am-form">
+            <fieldset class="am-form-set">
+                <input type="text" placeholder="性别" ng-model="info.sex">
+                <input type="text" placeholder="身高" ng-model="info.height">
+                <input type="text" placeholder="初始体重" ng-model="info.weight">
+                <input type="text" placeholder="年龄" ng-model="info.age">
+            </fieldset>
+            <button type="submit" class="am-btn am-btn-primary am-btn-block" ng-click="save(info)">确定</button>
+        </form>
+    </div>
+</div>
+<div style="height: 80px"></div>
+<div ng-include="'html/common/footer.html'"></div>

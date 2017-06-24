@@ -1,0 +1,20 @@
+<div ng-include="'html/common/header.html'"></div>
+<div class="person_back">
+    <div class="head_img"></div>
+    <div class="username">{{user.username}}</div>
+</div>
+<div style="height: 30px"></div>
+<div data-am-widget="list_news" class="am-list-news am-list-news-default ul_content">
+    <div class="am-list-news-bd">
+        <ul class="am-list">
+            <li ng-repeat="i in person_info" class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left list_li">
+                <div class="am-u-sm-4 am-list-thumb am-u-sm-offset-1">{{i.key}}</div>
+                <div class=" am-u-sm-2 am-list-main am-u-sm-offset-5" style="color: #a3a3a3" >{{i.value}}</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="login_out">
+    <button class="am-btn am-btn-danger am-btn-block" ng-click="login_out()">退出登录</button>
+</div>
+<div ng-include="'html/common/footer.html'"></div>
