@@ -1,4 +1,5 @@
-angular.module('appDb', [])
+import angular from 'angular';
+export default angular.module('appDb', [])
     //执行sql ===========================================================
     .factory('exeSql', ['$q', function ($q) {
         return function (sql) {
@@ -74,5 +75,6 @@ angular.module('appDb', [])
                 return $q.all(promiseInstall);
             });
         };
-    }]);
+    }])
+    .name;
 

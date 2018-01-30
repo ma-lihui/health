@@ -1,0 +1,10 @@
+{
+  "name": "health",
+  "version": "1.0",
+  "sqls": {
+    "user": "CREATE TABLE IF NOT EXISTS user(id int(11) DEFAULT 0,username varchar(100)  PRIMARY KEY NOT NULL,password varchar(100),sex int(4),email varchar(128),weight varchar(64),height varchar(64),user_id varchar(128),status int(4) DEFAULT 0 ,lastlogin int(64))",
+    "person_info": "CREATE TABLE IF NOT EXISTS person_info(username varchar(100)  PRIMARY KEY NOT NULL,sex int(4),email varchar(128),weight varchar(64),height varchar(64),user_id varchar(128),age int(4))",
+    "weight":"CREATE TABLE IF NOT EXISTS weight(username varchar(100),weight varchar(64),date varchar(64),user_id varchar(128),CONSTRAINT user_date UNIQUE (username, date))",
+    "sport":"CREATE TABLE IF NOT EXISTS sport(username varchar(100),distance varchar(64),calories varchar(64),time varchar(64),date varchar(64),user_id varchar(128),CONSTRAINT user_date UNIQUE (username, date))"
+  }
+}

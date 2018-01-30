@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2016/5/3.
  */
-var StatisticsCtrl = [
+export default [
     '$rootScope', '$scope', '$location', '$window', '$interval', 'ngDialog','timeStamp2String','select',
     function ($rootScope, $scope, $location, $window, $interval, ngDialog,timeStamp2String,select) {
         $scope.statistics=true;
@@ -33,4 +33,3 @@ var StatisticsCtrl = [
             }
         });
     }];
-StatisticsCtrl.$injector = ['$rootScope', '$scope', '$location', '$window', '$interval', 'ngDialog'];

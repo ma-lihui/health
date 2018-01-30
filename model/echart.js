@@ -1,7 +1,8 @@
 /**
  * Created by Administrator on 2016/5/11.
  */
-angular.module('echart', [])
+import angular from 'angular';
+export default angular.module('echart', [])
     .directive('line', function() {
     return {
         scope: {
@@ -53,4 +54,5 @@ angular.module('echart', [])
             },100);
         }
     };
-});  
+})
+.name;  

@@ -1,4 +1,5 @@
-angular.module('Filters', [])
+import angular from 'angular';
+export default angular.module('Filters', [])
         .filter('orderObjectBy', function () {
             return function (items, field, reverse) {
                 var filtered = [];
@@ -162,25 +163,6 @@ angular.module('Filters', [])
 				}
             };
         }])
-        .filter('skinType', ['$rootScope',function ($rootScope) {
-            return function (input) {
-                if (input == 001 || input == '001') {
-                    return $rootScope.language.TIP_DRY/*'干性'*/;
-                }
-                else if (input == 002 || input == '002') {
-                    return $rootScope.language.TIP_OILY/*'油性'*/;
-                }
-                else if (input == 003 || input == '003') {
-                    return $rootScope.language.TIP_NEUTRAL/*'中性'*/;
-                }
-                else if (input == 004 || input == '004') {
-                    return $rootScope.language.TIP_MIXED_SKIN/*'混合性'*/;
-                }
-                else if (input == 005 || input == '005') {
-                    return $rootScope.language.TIP_SENSITIVE/*敏感型*/;
-                }
-            };
-        }])
         .filter('shopName', ['$rootScope', function ($rootScope) {
                 return function (input) {
                     return $rootScope.current_shop.ShopName;
@@ -272,4 +254,5 @@ angular.module('Filters', [])
                 }
             };
         }])
+        .name
         ;

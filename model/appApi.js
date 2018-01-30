@@ -1,7 +1,8 @@
 /**
  * Created by Administrator on 2016/5/8.
  */
-angular.module('appApi', [])
+import angular from 'angular';
+export default angular.module('appApi', [])
     .factory('api', [function () {
         var now = Date.now();
         var app_id="A6908810234855";
@@ -27,4 +28,5 @@ angular.module('appApi', [])
             get_data:get_data
         };
     }])
+    .name
 ;

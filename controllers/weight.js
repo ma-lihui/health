@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2016/5/11.
  */
-var WeightCtrl = [
+export default [
     '$rootScope', '$scope', '$location', '$window', '$interval', 'ngDialog','radialIndicatorInstance','apiService','user','exeSql','select','dbInit','timeStamp2String',
     function ($rootScope, $scope, $location, $window, $interval, ngDialog,radialIndicatorInstance,apiService,User,exeSql,select,dbInit,timeStamp2String) {
         $scope.status=true;
@@ -58,4 +58,3 @@ var WeightCtrl = [
             });
         };
     }];
-WeightCtrl.$injector = ['$rootScope', '$scope', '$location', '$window', '$interval', 'ngDialog','apiService','User','exeSql','select','dbInit','timeStamp2String'];

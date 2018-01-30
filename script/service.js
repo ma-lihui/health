@@ -1,4 +1,4 @@
-angular.module('appService', [])
+export default angular.module('appService', [])
     .factory('apiService', ['$rootScope', '$http', '$location',
         function ($rootScope, $http, $location) {
             var now = Date.now();
@@ -140,4 +140,6 @@ angular.module('appService', [])
             }
 
         };
-    }]);
+    }])
+    .name
+    ;

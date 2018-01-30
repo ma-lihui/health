@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2016/5/3.
  */
-var MeCtrl = [
+export default [
     '$rootScope', '$scope', '$location', '$window', '$interval', 'ngDialog','exeSql','select',
     function ($rootScope, $scope, $location, $window, $interval, ngDialog,exeSql,select) {
         $scope.me=true;
@@ -52,4 +52,3 @@ var MeCtrl = [
         };
 
     }];
-MeCtrl.$injector = ['$rootScope', '$scope', '$location', '$window', '$interval', 'ngDialog','exeSql','select'];

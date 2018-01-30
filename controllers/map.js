@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2016/4/24.
  */
-var MapCtrl = [
+export default [
     '$rootScope', '$scope', '$location', '$window', '$interval', 'ngDialog','exeSql','select','timeStamp2String',
     function ($rootScope, $scope, $location, $window, $interval, ngDialog,exeSql,select,timeStamp2String) {
         $scope.back=true;
@@ -93,5 +93,4 @@ var MapCtrl = [
 
 
     }];
-MapCtrl.$injector = ['$rootScope', '$scope', '$location', '$window', '$interval', 'ngDialog'];
 

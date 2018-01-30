@@ -1,7 +1,8 @@
 /**
  * Created by Administrator on 2016/5/4.
  */
-angular.module('map', [])
+import angular from 'angular';
+export default angular.module('map', [])
     //执行sql
     .directive("appMap",["$interval","$rootScope" ,function ($interval,$rootScope) {
         return {
@@ -103,4 +104,6 @@ angular.module('map', [])
             }
         };
     }
-    ]);
+    ])
+    .name
+    ;

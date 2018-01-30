@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2016/5/3.
  */
-var StatusCtrl = [
+export default [
     '$rootScope', '$scope', '$location', '$window', '$interval', 'ngDialog','radialIndicatorInstance','apiService','user','exeSql','select','dbInit',
     function ($rootScope, $scope, $location, $window, $interval, ngDialog,radialIndicatorInstance,apiService,User,exeSql,select,dbInit) {
         $scope.status=true;
@@ -82,4 +82,3 @@ var StatusCtrl = [
         // });
 
 }];
-StatusCtrl.$injector = ['$rootScope', '$scope', '$location', '$window', '$interval', 'ngDialog','apiService','User','exeSql','select','dbInit'];

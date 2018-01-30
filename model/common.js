@@ -1,7 +1,8 @@
 /**
  * Created by Administrator on 2016/5/10.
  */
-angular.module('common', [])
+import angular from 'angular';
+export default angular.module('common', [])
     //执行sql
     .directive("dialog",["$interval","$rootScope" ,function ($interval,$rootScope) {
         console.log("hello1");
@@ -37,4 +38,5 @@ angular.module('common', [])
             }
         };
     }
-    ]);
+    ])
+    .name;
