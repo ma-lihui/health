@@ -22,6 +22,7 @@ module.exports = {
                 test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg)$/, 
                 loader: 'url-loader?limit=100000' 
             },
+            { test: /\.html$/, loader: 'raw-loader' },
         ]
     }
 };
